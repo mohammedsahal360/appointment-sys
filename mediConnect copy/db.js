@@ -1,12 +1,11 @@
 const mysql = require('mysql2');
 
 const pool = mysql.createPool({
-    host: 'localhost',
-    user: 'root', // Replace with your MySQL username
-    password: 'Sahal@2005', // Replace with your MySQL password
-    database: 'appointmentsystem',
-    socketPath: '/tmp/mysql.sock', // For macOS with Homebrew-installed MySQL
-    port: 3306
+      host: 'mydb.cpm0gwq46vit.ap-southeast-2.rds.amazonaws.com',
+      user: 'admin',                                             
+      password: 'Sahal#2005',                                   
+      database: 'mediconnect',                                     
+      port: 3306  
 });
 
 module.exports = pool.promise();

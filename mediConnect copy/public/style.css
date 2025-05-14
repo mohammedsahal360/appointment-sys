@@ -1,0 +1,677 @@
+*{
+    margin: 0;
+    font-family:Arial, Helvetica, sans-serif;
+    color: #12229D;
+}
+
+body{
+    background-color: #F4F6FC;
+}
+
+nav{
+    background-color: #CAE8FF;
+    display:flex;
+    padding: 11px;
+    justify-content: space-between;
+}
+
+.loc{
+    margin-left: 3%;
+}
+
+.loc button{
+    text-align: left;
+    padding-left: 15px;
+    width: 164px;
+    height:25px;
+    background-color: #ffffff;
+    border-radius: 6px;
+    border: 0px;
+    font-size: 14px;
+}
+
+nav ul{
+    list-style-type: none;
+    display: inline;
+    margin-right: 3%;
+}
+
+nav ul li{
+    display: inline;
+    margin: 10px;
+}
+
+#sighnIn{
+    background-color: #12229D;
+    padding: 5px;
+    padding-right: 20px;
+    padding-left: 20px;
+    color: #ffffff;
+    font-size: small;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+#sighnIn:hover{
+    background-color:#152077;
+}
+ 
+header{
+    background-color: #CAE8FF;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+}
+
+header h4{
+    font-size: 18px;
+    margin-bottom: 5px;
+    margin-top: 3vh;
+}
+
+header h5{
+    font-weight:lighter;
+    font-size: 14px;
+    margin-top: 5px;
+    padding-bottom: 3vh;
+}
+
+header h3{
+    font-size: 24px;
+    letter-spacing: 3px;
+    line-height: 30px;
+}
+
+.specialityorhospital{
+    margin: 6vh;
+}
+
+.optionselector{
+    border-radius: 15px;
+    background-color:#CAE8FF;;
+    display: flex;
+    margin-bottom: 2.5vh;
+}
+
+.option{
+    width: 50%;
+    margin-left: 0;
+    background-color:#CAE8FF;
+    text-align: center;
+    padding: 7px;
+    font-size: 24px;
+    font-weight: bold;
+    border-radius: 15px;
+}
+
+.option.selected{
+    background-color: #12229D;
+    color: #ffffff;
+}
+
+.option.unselected{
+    cursor: pointer;
+}
+
+.options{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 3vh;
+    margin-left: 7px;
+    max-height: 280px;
+    overflow: hidden;
+    justify-content: center;
+}
+
+.opt {
+    border-radius: 20px;
+    background-color:#ffffff;
+    width: 20vh;
+    font-size: 20px;
+    padding: 60px;
+    height: 6vh;
+    text-align: center;
+    display: flex; /* Add flex for alignment */
+    align-items: center; /* Center vertically */
+    justify-content: center; /* Center horizontally */
+    box-sizing: border-box; /* Ensure padding doesn't overflow */
+    cursor: pointer;
+}
+
+.opt:hover{
+    background-color: #e5eafa;
+} 
+
+
+.opt a{
+    text-decoration: none;
+    margin: 10px;
+    display: inline-block;
+}
+
+.showallbtn{
+    background-color: #E8ECFA;
+    border-radius: 13px;
+    padding: 10px;
+    justify-content: center;
+    text-align: center;
+    margin-top: 22px;
+}
+
+.showallbtn h5{
+    font-weight: normal;
+    font-size: 15px;
+}
+
+.showallbtn:hover{
+    background-color: #d8e0f9;
+}
+
+.showallbtn:hover{
+    cursor: pointer;
+}
+
+.options.sall{
+    max-height: 1000px;
+}
+
+.doctorlist{
+    margin: 6vh;
+}
+
+.doctorlist .heading{
+    margin-bottom: 10px;
+}
+
+.doctorlist h2{
+    font-size: 26px;
+}
+
+.doc{
+    width: 100%;
+    display: flex;
+    background-color: #E8ECFA;
+    border-radius: 22px;
+    padding: 10px;
+    margin-top: 20px;
+}
+.docmain{
+    width: 100%;
+    padding: 10px;
+    padding-bottom: 0;
+}
+
+.docmain hr{
+    color: #CDD5ED;
+}
+
+.docpic{
+    max-height: 135px;
+    min-width: 135px;
+    background-color: #CAE8FF;
+    border-radius: 20px;
+}
+
+.docdetails .name{
+    font-weight: bold;
+}
+
+.docdetails .qualification{
+    font-size: 10pt;
+}
+
+.docdetails .special{
+    margin-top: 10px;
+}
+
+.btns{
+    display: flex;
+    gap: 2vh;
+    margin-top: 8px;
+}
+
+.bookbtn, .scheduledbtn{
+    background-color: #12229D;
+    color: #ffffff;
+    width: 80%;
+    padding: 0.8vh;
+    text-align: center;
+    border-radius: 7px;
+    cursor: pointer;
+}
+
+.bookbtn:hover, .scheduledbtn:hover{
+    background-color:#152077;
+}
+
+.bookbtn h4, .scheduledbtn h4{
+    color: #ffffff;
+    font-weight: normal;
+}
+
+footer{
+    bottom: 0;
+    background-color:#CAE8FF;
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+}
+
+.address{
+    margin-bottom: 6vh;
+}
+
+.address h4{
+    padding: 50px;
+    padding-bottom: 10px;
+}
+
+.address .adline{
+    font-size: 10pt;
+    line-height: 20px;
+    padding-left: 50px;
+}
+
+.social{
+    text-align: right;
+    margin-right: 65px;
+}
+
+.social a i{
+    color: #8D8989;
+    font-size: 17pt;
+}
+
+.copyright hr{
+    width: 95%;
+    margin: auto;
+    color:#CDD5ED;
+}
+
+.copyright{
+    text-align: center;
+}
+
+.copytxt{
+    font-size: 9pt;
+    padding: 10px;
+    color: #8D8989;
+}
+/*sighn in box*/
+
+.continuesign{
+    width: 100%;
+    height: 60vh;
+    position: fixed;
+    margin: auto;
+    z-index: 1;
+}
+
+.signbox{
+    width: 60vh;
+    height: 60vh;
+    margin: auto;
+    background-color: #ffffff;
+    border-radius: 20px;
+    box-shadow: 5px 5px 15px #8D8989;
+    position: relative;
+}
+
+.signbox span{
+    text-align: left;
+    margin-left: 12px;
+}
+
+.closebox{
+    position: absolute;
+    right: 30px;
+    top: 20px;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.closebox span{
+    color: #8D8989;
+}
+
+.signbox h2{
+    margin-top: 30px;
+    margin-bottom: 20px;
+    font-size: 30px;
+}
+
+.signbox hr{
+    width: 95%;
+    margin: auto;
+    color: #CDD5ED;
+}
+
+.signinbox{ 
+    padding: 2vh;
+    display: grid;
+    text-align: center;
+    justify-content: center;
+}
+
+.signinbox input{
+    width: 30vh;
+    height: 2vh;
+    background-color: #F4F6FC;
+    border: 1px inset;
+    border-radius: 10px;
+    margin: 10px;
+    margin-top: 0;
+    font-size: 20px;
+    padding: 10px;
+}
+
+.signinbox button{
+    width: 32.5vh;
+    height: 4vh;
+    border: 1px;
+    background-color: #12229D;
+    border-radius: 10px;
+    margin: 10px;
+    color: #ffffff;
+    font-size: 20px;
+    margin-top: 3px;
+}
+
+.signupsug{
+    cursor: pointer;
+}
+
+.socialsign{
+    display: grid;
+    justify-content: center;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.socialsign i{
+    margin-right: 3px;
+    font-size: 17px;
+    color: #8D8989;
+}
+
+.socialsign .google, .socialsign .apple, .socialsign .facebook{
+    width: 30vh;
+    height: 2vh;
+    padding: 10px;
+    color: #8D8989;
+    border: 1px solid #8D8989;
+    margin-bottom: 10px;
+    border-radius: 10px;
+}
+
+.forgotpass{
+    text-align: left;
+    margin-left: 10px;
+    margin-bottom: 25px;
+}
+
+.hide{
+    display: none;
+}
+
+.blur{
+    filter: blur(5px);
+}
+
+.locationsec{
+    background-color: #CAE8FF;
+    width: 30%;
+    position: fixed;
+    top: 0;
+}
+
+.input{
+    margin: auto;
+    width: 80%;
+    padding: 1vh;
+}
+
+.input input{
+    height: 3vh;
+    width: 100%;
+}
+
+.booknow{
+    z-index: 1;
+    width: 100%;
+    height: 90vh;
+    position: fixed;
+    margin-top: -20vh;
+}
+.booknowcont{
+    width: 80%;
+    margin: auto;
+    height: 100%;
+    background-color: #ffffff;
+    border-radius: 20px;
+    position: relative;
+}
+.doctorhead{
+    background-color: #12229D;
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+    border-radius: 20px;
+    border-bottom-left-radius: 40px;
+    border-bottom-right-radius: 40px;
+    position: relative;
+}
+
+.doctorhead .doctorpic{
+    width: 135px;
+    height: 135px;
+    background-color: #CAE8FF;
+    border-radius: 20px;
+}
+
+.doctorhead .doctordetails .name{
+    margin-top: 5px;
+    font-weight: bold;
+}
+.doctorhead .doctordetails .qualification{
+    font-size: 10pt;
+}
+
+.doctorhead .doctordetails .special{
+    margin-top: 50px;
+}
+
+.doctorhead .doctordetails .hospital{
+    font-size: 10pt;
+}
+
+.doctorhead .doctordetails .name, .doctorhead .doctordetails .qualification, .doctorhead .doctordetails .special, .doctorhead .doctordetails .hospital{
+    color: #ffffff;
+}
+
+.doctorhead .rating{
+    color: #ffffff;
+    margin-left: auto;
+}
+
+.doctorhead .rating span{
+    color: gold;
+    font-size: 15px;
+}
+
+.slotarea .heading{
+    padding: 20px;
+}
+
+.dateselector{
+    display: flex;
+    gap: 5px;
+    margin-left: 5vh;
+    margin-top: 3vh;
+}
+
+.dateselector .date {
+    background-color: #12229D;
+    color: #ffffff;
+    border-radius: 10px;
+    height: 5vh;
+    width: 5vh;
+    display: flex;  /* Enables flexbox */
+    align-items: center;  /* Centers vertically */
+    justify-content: center;  /* Centers horizontally */
+    text-align: center;
+}
+
+.slots{
+    width: 70%;
+    margin-left: 15%;
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.slot{
+    border: 1.5px solid;
+    border-radius: 10px;
+    text-align: center;
+    padding: 10px 25px;
+}
+
+.full, .full *{
+    border-color: #8D8989;
+    color:#8D8989;
+}
+
+
+
+.almost, .almost *{
+    border-color: #CF8F13;
+    color:#CF8F13;
+}
+
+.less, .less *{
+    border-color: #00BF63;
+    color:#00BF63;
+}
+
+.foot{
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+.foot .btns{
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    margin-bottom: 20px;
+    margin: auto;
+}
+
+.btns .backbtn, .btns .schedulebtn{
+    background-color: #12229D;
+    color: #ffffff;
+    border-radius: 10px;
+    padding: 10px 30px;
+    cursor: pointer;
+}
+
+.btns .backbtn:hover, .btns .schedulebtn:hover{
+    background-color:#152077;
+}
+
+.colormean{
+    background-color:#E8ECFA;
+    display: flex;
+    gap: 30px;
+    padding-left: 5%;
+    margin-top: 20px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+.colorbox{
+    display: flex;
+    gap: 6px;
+}
+
+.colorbox .green, .colorbox .orrange, .colorbox .grey{
+    height: 16px;
+    width: 16px;
+    border-radius: 5px;
+}
+
+.green{
+    background-color: #00BF63;
+}
+
+.orrange{
+    background-color: #CF8F13;
+}
+
+.grey{
+    background-color: #8D8989;
+}
+
+@media (max-width: 1200px){
+    .signbox{
+        width: 40vh;
+    }
+}
+@media (max-width: 768px){
+    .continuesign{
+        height: 90%;
+        animation: move 1.3s;
+        margin-top: 70px;
+    }
+    .signbox{
+        width: 100%;
+        margin-top: -200px;
+        height: 100%;
+    }
+    .aboutus{
+        display: none;
+    }
+    .opt{
+        width: 10vh;
+        font-size: 14px;
+    }
+    .docpic{
+        display: none;
+    }
+    .docdetails{
+        display: flex;
+        gap: 10px;
+    }
+    .mob hr{
+        display: none;
+    }
+    .docimg{
+        max-height: 135px;
+        min-width: 135px;
+        background-color: #CAE8FF;
+        border-radius: 20px;
+    }
+    .blur{
+        animation: bluring 1.3s;
+    }
+    @keyframes move {
+        0%{
+            transform: translateY(1000px);
+        }
+        100%{
+            transform: translateY(0);
+        }
+    }
+    @keyframes bluring {
+        0%{
+            filter: blur(0px);
+        }
+        100%{
+            filter: blur(5px);
+        }
+    }
+}

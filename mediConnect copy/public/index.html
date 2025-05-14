@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MediConnect.in</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=HK+Grotesk:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">  
+</head>
+<body>
+    <!--Header-->    
+    <header id="header">
+    <!--Navigation--> 
+    <nav>
+        <div class="loc">
+            <button>Kodungallur</button>
+        </div>
+        <div class="rightnav">
+            <ul>
+                <li class="aboutus">About Us</li>
+                <li id = "sighnIn">Sign In</li>
+            </ul>
+        </div>
+    </nav>
+        <h4>MediConnect.in</h4>
+        <h3>CONNECTING YOU TO <br> TRUSTED <br> HEALTH CARE PROFFESIONALS</h3>
+        <h5>250+ Hospitals | 1000+ Doctors</h5>
+    </header>
+    <div class="locationsec hide">
+        <div class="input">
+            <input type="text">
+        </div>
+    </div>
+    <div class="continuesign hide" id="signbox">
+        <div class="signbox">
+            <div class="closebox">
+                <span onclick="toggleSignbox()">&times;</span>
+            </div>
+            <div class="signinbox">
+                <h2>Sign in to continue</h2>
+                <span>User id</span>
+                <input type="text" id="username" placeholder="Email or Phone">
+                <span>Password</span>
+                <input type="text" id="password" placeholder="Password">
+                <div class="forgotpass">Forgot password?</div>
+                <button id="signbtn" onclick="signclick()">Sign in</button>
+                <div class="signupsug" id="signupsug" onclick="convertsigntype()">No account! sign up now</div>
+            </div>
+            <hr>
+            <div class="socialsign">
+                <div class="google"><i class="fab fa-google"></i>Sign in with google</div>
+                <div class="apple"><i class="fab fa-apple"></i>Sign in with apple</div>
+                <div class="facebook"><i class="fab fa-facebook-f"></i>Sign in with facebook</div>
+            </div>
+        </div>
+    </div>
+    <!--Booking Interface-->
+    <div class="booknow hide" id="booknow">
+        <div class="booknowcont" id="booknowcont">
+            <div class="doctorhead" id="booknowdochead">
+
+            </div>
+            <div class="slotarea">
+                <div class="dateselector" id="dateselctor">
+                    <div class="date today">Today</div>
+                    <div class="date">3 <br>Feb</div>
+                    <div class="date">4 <br>Feb</div>
+                    <div class="date">5 <br>Feb</div>
+                    <div class="date">6 <br>Feb</div>
+                </div>
+                <div class="heading">
+                    <h2>Select your slot -</h2>
+                </div>
+                <div class="slots" id = "slots">
+
+                </div>
+            </div>
+            <div class="foot">
+                <div class="btns">
+                    <div class="backbtn" onclick="togglebookingbox()">&larr; back</div>
+                    <div class="schedulebtn">Schedule a date</div>
+                </div>
+                <div class="colormean">
+                    <div class="colorbox">
+                        <div class="green"></div><span>slot available</span>
+                    </div>
+                    <div class="colorbox">
+                        <div class="orrange"></div><span>slot filling fast</span>
+                    </div>
+                    <div class="colorbox">
+                        <div class="grey"></div><span>slot not available</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Main content starts here-->
+    <div class="main" id="main">
+        <!--specialities and hospitals selection-->
+        <div class="specialityorhospital">
+            <div class="optionselector" id ="optionselector">
+                <div class="option specialopt selected">Specialities</div>
+                <div class="option hospitalopt unselected">Hospitals</div>
+            </div>
+            <div id="options" class="options">
+                
+            </div>
+            <div id="showallbtn" class="showallbtn">
+                <h5>SHOW ALL SPECIALITIES</h5>
+            </div>
+        </div>
+        <div class="doctorlist">
+            <div class="heading" id="heading">
+                <h2>Top doctors near Kodungallur</h2>
+            </div>
+            <div id="dclist" class="dclist">
+                
+            </div>
+        </div>
+    </div>
+    <footer id="footer">
+        <div class="address">
+            <h4>MediConnect.in</h4>
+            <div class="adline">Karumathra PO. 680123, Vellangallur, Irinjalakuda</div>
+            <div class="adline">TOLL FREE Customer Support: 1800-1002-2233</div>
+            <div class="adline">Mail us: queries@mediconnect.in</div>
+        </div>
+        <div class="social">
+            <a href="https://www.youtube.com" target="_blank"><i class="fab fa-youtube-square"></i></a>
+            <a href="https://www.linkedin.com" target="_blank"><i class="fab fa-linkedin"></i></a>
+            <a href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram-square"></i></a>
+            <a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook-square"></i></a>
+        </div>
+        <div class="copyright">
+            <hr>
+            <div class="copytxt">Copyright 2024 All rights reserved by MediConnect</div>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

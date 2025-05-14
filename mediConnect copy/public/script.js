@@ -60,7 +60,7 @@ function signclick() {
         return;
     }
 
-    const url = isSigned(isSignUp) ? 'http://https://mediconnect-dfg1.onrender.com:3000/register' : 'http://https://mediconnect-dfg1.onrender.com:3000/login';
+    const url = isSigned(isSignUp) ? 'https://mediconnect-dfg1.onrender.com:3000/register' : 'https://mediconnect-dfg1.onrender.com:3000/login';
 
 
 
@@ -85,7 +85,7 @@ function signclick() {
 }
 
 document.addEventListener("DOMContentLoaded", () => {
-    fetch('http://https://mediconnect-dfg1.onrender.com:3000/check-auth')
+    fetch('https://mediconnect-dfg1.onrender.com:3000/check-auth')
         .then(response => response.json())
         .then(data => {
             if (data.isSigned) {
@@ -150,7 +150,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
 async function loadAllHospitals(placeId){
     try{
-        const response = await fetch(`http://https://mediconnect-dfg1.onrender.com:3000/api/hospitals/${placeId}`);
+        const response = await fetch(`https://mediconnect-dfg1.onrender.com:3000/api/hospitals/${placeId}`);
         const hospitals = await response.json();
 
         const optblock = document.getElementById('options');
@@ -171,7 +171,7 @@ async function loadAllHospitals(placeId){
 
 async function loadAllSpecialities(placeId){
     try{
-        const response = await fetch(`http://https://mediconnect-dfg1.onrender.com:3000/api/specialities/${placeId}`);
+        const response = await fetch(`https://mediconnect-dfg1.onrender.com:3000/api/specialities/${placeId}`);
         const specialities = await response.json();
         const optblock = document.getElementById('options');
         optblock.innerHTML = "";
@@ -190,21 +190,21 @@ async function loadAllSpecialities(placeId){
 }
 
 async function getSpeciality(id){
-    const response = await fetch(`http://https://mediconnect-dfg1.onrender.com:3000/api/speciality/${id}`);
+    const response = await fetch(`https://mediconnect-dfg1.onrender.com:3000/api/speciality/${id}`);
     const speciality = await response.json();
     console.log(`speciality: ${speciality[0].name}`);
     return speciality[0].name;
 }
 
 async function getHospital(id){
-    const response = await fetch(`http://https://mediconnect-dfg1.onrender.com:3000/api/hospital/${id}`);
+    const response = await fetch(`https://mediconnect-dfg1.onrender.com:3000/api/hospital/${id}`);
     const hospital = await response.json();
     console.log(`hospital: ${hospital[0].name}`);
     return hospital[0].name;
 }
 
 async function loadAllDoctors(placeId){
-    const response = await fetch(`http://https://mediconnect-dfg1.onrender.com:3000/api/doctors/${placeId}`);
+    const response = await fetch(`https://mediconnect-dfg1.onrender.com:3000/api/doctors/${placeId}`);
     const doctors = await response.json();
 
     const doctorlist = document.getElementById('dclist');
@@ -261,7 +261,7 @@ async function loadNameonBooking(name, qualification, speciality, hospital,ratin
 async function loadSlots(doctorId){
     try{
         const slotbox = document.getElementById('slots');
-        const response = await fetch(`http://https://mediconnect-dfg1.onrender.com:3000/api/slots/${doctorId}`);
+        const response = await fetch(`https://mediconnect-dfg1.onrender.com:3000/api/slots/${doctorId}`);
         const slots = await response.json();
         slotbox.innerHTML = "";
         if (slots.length === 0) {
